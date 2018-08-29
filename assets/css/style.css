@@ -320,20 +320,18 @@ body {
   
   
   @media screen and (max-width: 640px) {
-    header {
-      margin: 0px;
-    }
-  
-    body {
-      margin: 0px;
-    }
-  
+    
     #masthead {
       position: static;
       top: 0px;
       left: 0px;
       margin: 0px;
       height: 125px; 
+    }
+
+    h1 {
+        margin-top: 20px;
+        text-align: center;
     }
   
     footer {
@@ -348,6 +346,7 @@ body {
       text-align: center;
       position: relative;
       bottom: 25px;
+      right: 15px;
       font-size: small;
       height: 70px;
     }
@@ -389,7 +388,7 @@ body {
       width: 100%;
       position: relative;
       bottom: 25px;
-      font-size: larger;
+      font-size: 24px;
     }
   
     #copyright {
