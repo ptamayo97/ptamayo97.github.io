@@ -1,52 +1,142 @@
-<!doctype html>
-<html lang="en-us">
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Paul Tamayo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Paul Tamayo</title>
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Paul Tamayo</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" id="brand" href="#">Paul Tamayo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#aboutMe">About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
+  <div class="main">
+    <div class="jumbotron jumbotron-fluid" id="helloJumbo">
+      <div class="container" id="helloContent">
+        <h1 class="display-4">Hi, I'm Paul :)</h1>
+        <p class="lead">I'm a Front-End developer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid" id="aboutJumbo">
+    <div class="container">
+      <a name="aboutMe"></a>
+      <h1 class="display-4 "></a>About me</h1>
+      <div class="about-content">
+        <p>I am a developer that is eager to learn more technologies and further develop my coding skills.</p>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+        <p>Learning new skills has always been a passion of mine so it was easy for me to fall in love with coding.</p>
 
-      <img src="assets/images/paulT.PNG" class="auth-image" alt="Your Name">
+        <p>I have a solid understanding of HTML, CSS, Bootstrap, Javascript and jQuery and experience creating responsive websites
+          and basic Javascript programs.</p>
+      </div>
+    </div>
+  </div>
 
-      <p>I am a new developer that is eager to learn more technologies and further develop my coding skills.</p>
+  <div class="jumbotron jumbotron-fluid " id="portfolio">
+    <a name="portfolio"></a>
+    <div class="container">
+      <h1 class="display-4">Portfolio</h1>
+      <div class="row">
+        <div class="col">
+          <div class="work">
+            <a href="https://ptamayo97.github.io/unit-4-game/" target="_blank">
+              <img src="assets/images/crystalcollector.png" alt="Crystal Collector Game">
 
-      <p>Learning new skills has always been a passion of mine so it was easy for me to fall in love with coding. I have also
-        always loved solving puzzles and to me, coding is just like a puzzle where you create the pieces and put them together
-        to develop any website, application, or program you can imagine.</p>
+            </a>
+          </div>
+          <h3>Crystal Collector Game</h3>
+          <p>
+            <a href="https://github.com/ptamayo97/unit-4-game">view source on Git Hub</a>
+          </p>
 
-      <p>I am currently enrolled in a coding bootcamp at UC San Diego Extension which has provided me with a solid understanding
-        of HTML, CSS, and Bootstrap as well as a good understanding of Javascript and jQuery. I have experience creating
-        responsive websites and basic Javascript games such as hangman. I hope to become a full stack or front end developer
-        at a company after the completion of my program.</p>
-    </section>
+        </div>
+        <div class="col">
+          <div class="work">
+            <a href="https://ptamayo97.github.io/TriviaGame/">
+              <img src="assets/images/trivia.png" alt="Trivia Game">
+            </a>
+           
+          </div>
+          <h3>Trivia Game</h3>
+          <p>
+            <a href="https://github.com/ptamayo97/TriviaGame">view source on Git Hub</a>
+          </p>
 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ">
+          <div class="work">
+            <a href="https://ptamayo97.github.io/GifTastic/">
+              <img src="assets/images/giftastic_scrnsht.png" alt="Gif Generator">
+            </a>
+          </div>
+          <h3>Gif Generator</h3>
+          <p>
+            <a href="https://github.com/ptamayo97/GifTastic">view source on Git Hub</a>
+          </p>
+
+        </div>
+        <div class="col">
+          <div class="work">
+            <a href="https://ptamayo97.github.io/Gig-It/">
+              <img src="assets/images/Screenshot (13).png" alt="Gig It">
+
+
+            </a>
+           
+          </div>
+          <h3>Gig It</h3>
+          <p>
+            <a href="https://github.com/ptamayo97/Gig-It">view source on Git Hub</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <footer>
-    <div class="container">
-      <span id="copyright">Copyright &copy;</span>
-    </div>
+    <a name="contact"></a>
+      <a href="https://github.com/ptamayo97" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/paul-tamayo-317926168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      
+      <p id="email"><i class="fas fa-envelope"></i> ptamayo97@yahoo.com</p>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
