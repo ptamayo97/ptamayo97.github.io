@@ -37,7 +37,7 @@ h1, h3 {
 
 #helloJumbo {
     background: #ffffff;
-    height: 575px;
+    height:100vh;
 }
 
 #helloContent {
@@ -48,7 +48,9 @@ h1, h3 {
   background: #2552d8;
   color: #ffffff;
   padding-bottom: 50px;
-  height: 550px;
+  /* height: 550px; */
+  height:100vh;
+
 }
 
 .heading {
@@ -80,6 +82,7 @@ h1, h3 {
 
 #portfolio {
   background: #ffffff;
+  height:100vh;
 }
 
 footer {
@@ -97,7 +100,7 @@ footer a {
    color: #ffffff
  }
   
-  
+
   
   
   
