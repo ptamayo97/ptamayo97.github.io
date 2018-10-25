@@ -48,8 +48,8 @@ h1, h3 {
   background: #2552d8;
   color: #ffffff;
   padding-bottom: 50px;
-  /* height: 550px; */
-  height:100vh;
+  height: 550px;
+  /* height:100vh; */
 
 }
 
@@ -82,12 +82,13 @@ h1, h3 {
 
 #portfolio {
   background: #ffffff;
-  height:100vh;
+  /* height:100vh; */
 }
 
 footer {
   height: 100px;
   background: #2552d8;
+ 
 }
 
 footer a {
