@@ -1,10 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Rubik");
 
-@import url('https://fonts.googleapis.com/css?family=Roboto|Rubik');
+#firstView {
+  height: 100vh;
+  position: relative;
+}
 
+#navbar {
+  position: absolute;
+  top: 0px;
+}
+
+#greeting {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  transform: scale(1.1);
+}
+
+#greetingContent {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  text-shadow: black 2px 2px 2px;
+}
+
+#hello {
+  margin: 20px;
+}
+
+.big-text {
+  font-size: 2.5em;
+}
+
+.main {
+  height: 100%;
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
+}
+
+#more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 110px;
+  opacity: 0.7;
+  text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+/* About Section */
+#aboutSection {
+  position: relative;
+  top: 20px;
+  padding: 10% 0;
+  text-align: center;
+}
+
+.about-content {
+  border: 3px solid #f1f1f1;
+  text-shadow: 1px 1px 1px black;
+  margin: 0;
+}
+
+.work img {
+  width: 300px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+/* .tinted-image {
+  background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("../images/pexels-photo-943096.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+} */
+
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 75%;
+  padding: 20px;
+  text-align: center;
+}
+/* #eyes {
+  position: relative;
+  bottom: 6px;
+} */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto|Rubik");
 
 body {
   text-align: center;
-}  
+}
 
 nav {
   background: #ffffff;
@@ -12,17 +114,17 @@ nav {
 
 #brand {
   color: #2552d8;
-  font-family: 'Roboto', 'Rubik', sans-serif;
+  font-family: "Roboto", "Rubik", sans-serif;
   font-weight: bold;
-
 }
 
 h1 {
   margin-bottom: 25px;
 }
 
-h1, h3 {
-  font-family: 'Roboto', 'Rubik', sans-serif;
+h1,
+h3 {
+  font-family: "Roboto", "Rubik", sans-serif;
 }
 
 #navbarNav {
@@ -31,13 +133,13 @@ h1, h3 {
 
 .jumbotron {
   width: 100%;
-  
+
   margin-bottom: 0;
 }
 
 #helloJumbo {
-    background: #ffffff;
-    height:100vh;
+  background: #ffffff;
+  height: 100vh;
 }
 
 #helloContent {
@@ -49,8 +151,6 @@ h1, h3 {
   color: #ffffff;
   padding-bottom: 50px;
   height: 550px;
-  /* height:100vh; */
-
 }
 
 .heading {
@@ -82,13 +182,11 @@ h1, h3 {
 
 #portfolio {
   background: #ffffff;
-  /* height:100vh; */
 }
 
 footer {
   height: 100px;
   background: #2552d8;
- 
 }
 
 footer a {
@@ -96,12 +194,7 @@ footer a {
   font-size: 2em;
 }
 
- #email {
-   font-size: 1em;
-   color: #ffffff
- }
-  
-
-  
-  
-  
+#email {
+  font-size: 1em;
+  color: #ffffff;
+} */
