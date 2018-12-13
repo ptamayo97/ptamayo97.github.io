@@ -31,51 +31,53 @@
   </head>
 
   <body>
+    <nav class="red darken-4 " id="navbar">
+      <div class="nav-wrapper">
+        <a class="brand-logo " id="brand" href="#">P.T.</a>
+        <a href="#" data-target="mobil-demo" class="sidenav-trigger right"
+          ><i class="material-icons ">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#aboutMe" class="">About</a></li>
+          <li><a href="#portfolio" class="">Portfolio</a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- side nav on collapse -->
+    <ul class="sidenav" id="mobil-demo">
+      <li><a href="#aboutMe">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <div id="firstView">
-      <div class="main tinted-image">
-        <div id="greeting">
-          <img src="./assets/images/pexels-photo-943096.jpeg" alt="" />
-        </div>
-      </div>
-      <nav class="red darken-4 " id="navbar">
-        <div class="nav-wrapper">
-          <a class="brand-logo center" id="brand" href="#">Paul Tamayo</a>
-          <a href="#" data-target="mobil-demo" class="sidenav-trigger right"
-            ><i class="material-icons ">menu</i></a
+      <div class="main">
+        <div class="valign-wrapper " id="greeting">
+          <div
+            class="flow-text white-text bg-text z-depth-5"
+            id="greetingContent"
           >
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#aboutMe" class="">About</a></li>
-            <li><a href="#portfolio" class="">Portfolio</a></li>
-            <li><a href="#contact" class="">Contact</a></li>
-          </ul>
+            <p id="hello" class="big-text">
+              Hi,<br />
+              I'm Paul <span id="eyes">:)</span>
+            </p>
+            <p>I'm a Full Stack Developer.</p>
+          </div>
         </div>
-      </nav>
-      <!-- side nav on collapse -->
-      <ul class="sidenav" id="mobil-demo">
-        <li><a href="#aboutMe">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="flow-text white-text bg-text" id="greetingContent">
-        <p id="hello" class="big-text">
-          Hi,<br />
-          I'm Paul <span id="eyes">:)</span>
-        </p>
-        <p>I'm a Front-End developer.</p>
-      </div>
-
-      <div id="more">
-        <p>
-          <a href="#aboutMe"
-            ><i class="material-icons medium white-text"
-              >keyboard_arrow_down</i
-            ></a
-          >
-        </p>
+        <div class="flow-text" id="more">
+          <p>
+            <a href="#aboutMe"
+              ><i class="material-icons medium white-text"
+                >keyboard_arrow_down</i
+              ></a
+            >
+          </p>
+        </div>
       </div>
     </div>
     <!-- #firstView end -->
+
+    <!-- About Me -->
     <a name="aboutMe"></a>
     <div id="aboutSection" class="grey darken-4">
       <div class="container">
@@ -84,7 +86,7 @@
         >
           <div class="container">
             <div class="row">
-              <p class="big-text">About me</p>
+              <p class="big-text" id="aboutLabel">About me</p>
               <div class="about-body">
                 <p>
                   I am a developer that is eager to learn more technologies and
@@ -110,11 +112,17 @@
 
     <!-- Portfolio Section -->
     <a name="portfolio"></a>
-    <div class="portfolioSection">
+    <div class="portfolio-section red darken-4">
       <div class="container">
-        <div class="portfolio-content ">
-          <div class="flow-text"><p class="big-text">My Work</p></div>
-          <div class="row">
+        <div class="portfolio-content grey darken-4 z-depth-5">
+          <div class="flow-text white-text">
+            <p class="big-text" id="portfolioLabel">My Work</p>
+          </div>
+          <div class="row work flow-text">
+            <!--
+              <div class="container">
+              <div class="row">
+            -->
             <div class="col l6">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -226,6 +234,10 @@
                 </div>
               </div>
             </div>
+            <!--
+              </div>
+              </div>
+            -->
           </div>
         </div>
       </div>

@@ -1,29 +1,75 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Rubik");
 
+html {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 #firstView {
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
 
 #navbar {
-  position: absolute;
+  position: sticky;
   top: 0px;
+  z-index: 2;
+}
+
+#brand {
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black;
+}
+
+.main {
+  height: 100%;
+  background: -webkit-linear-gradient(
+      top,
+      rgba(155, 0, 0, 0),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/pexels-photo-943096.jpeg") no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #greeting {
-  height: 100%;
+  /* position: relative; */
+  /* height: 100%; */
   display: flex;
   justify-content: center;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  transform: scale(1.1);
+  padding-top: 10%;
+  /* filter: blur(2px); */
+  /* -webkit-filter: blur(2px); */
+  /* transform: scale(1.1); */
 }
 
 #greetingContent {
-  position: absolute;
-  top: 50%;
+  /* top: 50%; */
   text-align: center;
   text-shadow: black 2px 2px 2px;
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  /* display: block; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* z-index: 2; */
+  width: 75%;
+  padding: 20px;
+  text-align: center;
 }
 
 #hello {
@@ -34,27 +80,29 @@
   font-size: 2.5em;
 }
 
-.main {
-  height: 100%;
-  /* filter: blur(5px);
-  -webkit-filter: blur(5px); */
-}
-
 #more {
-  position: relative;
+  position: absolute;
+  /* padding-top: 10%; */
   display: flex;
   justify-content: center;
-  bottom: 110px;
-  opacity: 0.7;
+  /* top: 100px; */
+  bottom: 10px;
+  left: 50%;
+  right: 50%;
+  opacity: 0.4;
   text-shadow: 1.5px 1.5px 1.5px black;
 }
 
 /* About Section */
 #aboutSection {
-  position: relative;
-  top: 20px;
+  /* position: relative; */
+  /* top: 20px; */
   padding: 10% 0;
   text-align: center;
+}
+
+#aboutLabel {
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black;
 }
 
 .about-content {
@@ -63,138 +111,52 @@
   margin: 0;
 }
 
-.work img {
-  width: 300px;
-  height: 200px;
-  border-radius: 25px;
+.portfolio-section {
+  padding: 70px 0;
 }
 
-/* .tinted-image {
-  background: -webkit-linear-gradient(
-      top,
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ),
-    url("../images/pexels-photo-943096.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-} */
+#portfolioLabel {
+  margin: 0;
+  padding: 50px 0;
+  text-shadow: 1px 1px 1px red, 2px 2px 2px black, 3px 3px 3px red;
+  text-align: center;
+}
 
-.bg-text {
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
+.portfolio-content {
   border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 75%;
-  padding: 20px;
-  text-align: center;
-}
-/* #eyes {
-  position: relative;
-  bottom: 6px;
-} */
-/* @import url("https://fonts.googleapis.com/css?family=Roboto|Rubik");
-
-body {
-  text-align: center;
-}
-
-nav {
-  background: #ffffff;
-}
-
-#brand {
-  color: #2552d8;
-  font-family: "Roboto", "Rubik", sans-serif;
-  font-weight: bold;
-}
-
-h1 {
-  margin-bottom: 25px;
-}
-
-h1,
-h3 {
-  font-family: "Roboto", "Rubik", sans-serif;
-}
-
-#navbarNav {
-  justify-content: flex-end;
-}
-
-.jumbotron {
-  width: 100%;
-
-  margin-bottom: 0;
-}
-
-#helloJumbo {
-  background: #ffffff;
-  height: 100vh;
-}
-
-#helloContent {
-  padding-top: 100px;
-}
-
-#aboutJumbo {
-  background: #2552d8;
-  color: #ffffff;
-  padding-bottom: 50px;
-  height: 550px;
-}
-
-.heading {
-  font-size: 2.5em;
-}
-
-.about-content {
-  margin-top: 70px;
 }
 
 .work {
-  position: relative;
+  margin: 20px;
 }
 
-.work img {
-  width: 300px;
-  height: 200px;
-  border-radius: 25px;
+/* laptops */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #brand {
+    padding-left: 15px;
+  }
 }
 
-.work h3 {
-  background: #2552d8;
-  color: #ffffff;
-  width: 300px;
-  position: relative;
-  margin: auto;
-  bottom: 55px;
+/* iphone */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #hello {
+    font-size: 2em;
+  }
 }
 
-#portfolio {
-  background: #ffffff;
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #greeting {
+    padding-top: 30%;
+  }
 }
 
-footer {
-  height: 100px;
-  background: #2552d8;
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #firstView {
+    height: 800px;
+  }
 }
-
-footer a {
-  color: #ffffff;
-  font-size: 2em;
-}
-
-#email {
-  font-size: 1em;
-  color: #ffffff;
-} */
