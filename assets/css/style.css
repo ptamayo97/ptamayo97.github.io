@@ -8,9 +8,17 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  line-height: 2em;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.3em;
+}
+
 #firstView {
   height: 100vh;
-  /* position: relative; */
 }
 
 #navbar {
@@ -39,18 +47,12 @@ html {
 }
 
 #greeting {
-  /* position: relative; */
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   padding-top: 10%;
-  /* filter: blur(2px); */
-  /* -webkit-filter: blur(2px); */
-  /* transform: scale(1.1); */
 }
 
 #greetingContent {
-  /* top: 50%; */
   text-align: center;
   text-shadow: black 2px 2px 2px;
 }
@@ -61,12 +63,6 @@ html {
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  /* display: block; */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 2; */
   width: 75%;
   padding: 20px;
   text-align: center;
@@ -82,10 +78,8 @@ html {
 
 #more {
   position: absolute;
-  /* padding-top: 10%; */
   display: flex;
   justify-content: center;
-  /* top: 100px; */
   bottom: 10px;
   left: 50%;
   right: 50%;
@@ -95,14 +89,8 @@ html {
 
 /* About Section */
 #aboutSection {
-  /* position: relative; */
-  /* top: 20px; */
   padding: 10% 0;
   text-align: center;
-}
-
-#aboutLabel {
-  text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black;
 }
 
 .about-content {
@@ -111,11 +99,15 @@ html {
   margin: 0;
 }
 
+.about-body p {
+  margin-bottom: 15px;
+}
+
 .portfolio-section {
   padding: 70px 0;
 }
 
-#portfolioLabel {
+.section-label {
   margin: 0;
   padding: 50px 0;
   text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black;
@@ -141,10 +133,6 @@ html {
 .card .card-reveal {
   z-index: 1;
 }
-
-/* .project-link a:link {
-  color: red;
-} */
 
 a:link {
   color: white;
@@ -202,8 +190,6 @@ footer {
   -webkit-box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
 -moz-box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
 box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
-/* position: sticky;
-bottom: -1px; */
 z-index: 2;
 }
 
@@ -212,6 +198,7 @@ z-index: 2;
   justify-content: center;
   font-size: 2em;
   text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+  padding: 10px 0;
 }
 
 .footer-links a {
@@ -222,8 +209,8 @@ z-index: 2;
   padding-bottom: 10px;
   text-shadow: 2px 2px 2px black;
 }
-/* laptops */
 
+/* laptops */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   #brand {
     padding-left: 15px;
