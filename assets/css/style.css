@@ -118,7 +118,7 @@ html {
 #portfolioLabel {
   margin: 0;
   padding: 50px 0;
-  text-shadow: 1px 1px 1px red, 2px 2px 2px black, 3px 3px 3px red;
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black, 3px 3px 3px black;
   text-align: center;
 }
 
@@ -128,6 +128,71 @@ html {
 
 .work {
   margin: 20px;
+}
+
+.card .card-title {
+  font-weight: 400; 
+}
+
+.card-title i.right {
+  margin: 0;
+}
+
+.card .card-reveal {
+  z-index: 1;
+}
+
+/* .project-link a:link {
+  color: red;
+} */
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(117, 2, 2);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* project links */
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-link a:nth-child(2) {
+  margin-left: 5%;
+}
+
+.project-link a:link {
+  color: red;
+}
+
+/* visited link */
+.project-link a:visited {
+  color: red;
+}
+
+/* mouse over link */
+.project-link a:hover {
+  color: rgb(117, 2, 2);
+}
+
+/* selected link */
+.project-link a:active {
+  color: blue;
 }
 
 /* laptops */
@@ -145,7 +210,13 @@ html {
   #hello {
     font-size: 2em;
   }
-}
+
+  .card .card-title {
+    font-size: 18px;
+  }
+  .project-link {
+    font-size: 14px;
+  }
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -157,6 +228,11 @@ html {
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #firstView {
-    height: 800px;
+    height: 500px;
+  }
+
+  #more {
+    position: relative;
+    top: 45px;
   }
 }
