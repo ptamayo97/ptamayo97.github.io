@@ -195,6 +195,33 @@ a:active {
   color: blue;
 }
 
+/* Footer */
+
+footer {
+  text-align: center;
+  -webkit-box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
+-moz-box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
+box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -3px 1px -2px rgba(0,0,0,0.12), 0 -1px 5px 0 rgba(0,0,0,0.2);
+/* position: sticky;
+bottom: -1px; */
+z-index: 2;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+}
+
+.footer-links a {
+  margin: 0 10px;
+}
+
+#email {
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 2px black;
+}
 /* laptops */
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
