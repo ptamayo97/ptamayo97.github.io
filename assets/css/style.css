@@ -116,7 +116,6 @@ p {
 
 .portfolio-content {
   border: 3px solid #f1f1f1;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
 
 .work {
@@ -125,10 +124,12 @@ p {
 
 .card .card-title {
   font-weight: 400;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
 
 .card-title i.right {
   margin: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
 
 .card .card-reveal {
