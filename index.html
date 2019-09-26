@@ -1,312 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Paul Tamayo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/startup-materialize.min.css" />
+
+    <!-- Material Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/portfolio.js"></script>
-    <title>Paul Tamayo</title>
   </head>
-
   <body>
-    <nav class="red darken-4 " id="navbar">
-      <div class="nav-wrapper">
-        <a class="brand-logo " id="brand" href="#">P.T.</a>
-        <a href="#" data-target="mobil-demo" class="sidenav-trigger right"
-          ><i class="material-icons ">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#aboutMe" class="">About</a></li>
-          <li><a href="#portfolio" class="">Portfolio</a></li>
-          <li><a href="#contact" class="">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar sticky navbar-solid-transition">
+      <div class="nav-wrapper container ">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a data-scroll href="#home">Home</a></li>
+          <li><a data-scroll href="#about">About</a></li>
+          <li>
+            <a data-scroll href="#projects" data-target="projects">Projects</a>
+          </li>
+          <li><a data-scroll href="#contact">Contact</a></li>
         </ul>
+
+        <!-- <ul id="projects" class="dropdown-content">
+          <li><a href="horizontal-half.html">Horizontal Halves</a></li>
+          <li><a href="sierra.html">Zoom Out</a></li>
+          <li><a href="circle-reveal.html">Circle Reveal</a></li>
+          <li><a href="phone-wall.html">Phone Wall</a></li>
+          <li><a href="element-transitions.html">Element Transitions</a></li>
+          <li><a href="basic-elements.html">Basic Elements</a></li>
+          <li><a href="card-shuffle.html">Shuffle</a></li>
+          <li><a href="postcards.html">Postcards</a></li>
+        </ul> -->
+
+        <a
+          href="#"
+          data-target="slide-out"
+          class="sidenav-trigger button-collapse right"
+          ><i class="material-icons white-text">menu</i></a
+        >
       </div>
     </nav>
-    <!-- side nav on collapse -->
-    <ul class="sidenav" id="mobil-demo">
-      <li><a href="#aboutMe">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div id="firstView">
-      <div class="main">
-        <div class="valign-wrapper " id="greeting">
-          <div
-            class="flow-text white-text bg-text z-depth-5"
-            id="greetingContent"
-          >
-            <p id="hello" class="big-text">
-              Hi,<br />
-              I'm Paul <span id="eyes">:)</span>
-            </p>
-            <p>I'm a Full Stack Developer.</p>
-          </div>
-        </div>
-        <div class="flow-text" id="more">
-          <p>
-            <a href="#aboutMe"
-              ><i class="material-icons medium white-text"
-                >keyboard_arrow_down</i
-              ></a
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- #firstView end -->
-
-    <!-- About Me -->
-    <a name="aboutMe"></a>
-    <div id="aboutSection" class="grey darken-4">
-      <div class="container">
-        <div
-          class="row flow-text white-text about-content red darken-4 z-depth-5"
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a class="waves-effect waves-teal" data-scroll href="#home">Home</a>
+      </li>
+      <li>
+        <a class="waves-effect waves-teal" data-scroll href="#about">About</a>
+      </li>
+      <li class="bold">
+        <a class="waves-effect waves-teal" data-scroll href="#projects"
+          >Projects</a
         >
-          <div class="container">
-            <div class="row">
-              <div class="big-text section-label" id="aboutLabel">About me</div>
-              <div class="about-body">
-                <div class="white-text text-darken-4">
-                  <p>
-                    I am a developer that is eager to learn more technologies
-                    and further develop my coding skills.
-                  </p>
+      </li>
+      <li>
+        <a class="waves-effect waves-teal" data-scroll href="#contact"
+          >Contact</a
+        >
+      </li>
+    </ul>
 
-                  <p>
-                    Learning new skills has always been a passion of mine so it
-                    was easy for me to fall in love with coding.
-                  </p>
+    <div id="home"></div>
+    <div class="header shuffle-over-transition">
+      <div class="background ">
+        <!-- <img class="bg" src="images/portfoliobg.jpeg" alt="" /> -->
 
-                  <p>
-                    I have a solid understanding of HTML, CSS, Bootstrap,
-                    Javascript and jQuery and experience creating responsive
-                    websites and Javascript programs.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="header-wrapper row valign-wrapper">
+          <div class="col s12">
+            <h1>Hi, I'm Paul</h1>
+            <span class="tagline">Websites and webapps are my thing.</span>
+            <button class="read-more"><i class="icon-caret-down"></i></button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Section -->
-    <a name="portfolio"></a>
-    <div class="portfolio-section grey darken-4">
+    <!-- About -->
+    <div id="about"></div>
+    <div class="section black valign-wrapper shuffle-over-transition">
       <div class="container">
-        <div class="portfolio-content red darken-4 z-depth-5">
-          <div class="flow-text white-text">
-            <div class="big-text section-label" id="portfolioLabel">
-              My Work
-            </div>
+        <div class="row">
+          <div class="col s12"><h2 class="section-title">About</h2></div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-light-bulb"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
           </div>
-          <div class="row work flow-text">
-            <!--
-              <div class="container">
-              <div class="row">
-            -->
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <!-- <a href="#"> -->
-                  <img
-                    class="activator"
-                    src="./assets/images/foody-corner.png"
-                  />
-                  <!-- </a> -->
-                </div>
-                <div class="card-content">
-                  <div>
-                    <span class="card-title activator grey-text text-darken-4"
-                      >Foody Corner<i class="material-icons right"
-                        >more_vert</i
-                      ></span
-                    >
-                  </div>
-                  <p class="project-link">
-                    <!-- <a href="#">This is a link</a> -->
-                    <a href="https://cryptic-taiga-20820.herokuapp.com/"
-                      >View Project</a
-                    >
-                    <a href="https://github.com/mimi29/FoodyCorner">GitHub</a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"
-                    >Foody Corner<i class="material-icons right">close</i></span
-                  >
-                  <p>
-                    A Full Stack application that allows you to search for and
-                    create your own recipes.
-                  </p>
-                  <p>
-                    Technologies Used: HTML5, CSS3, Bootstrap4, Javascript,
-                    jQuery, Handlebars.js, Node.js, mySQL.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-bolt"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-rocket"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-settings"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-umbrella"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h4><i class="icon-compass"></i></h4>
+            <p class="caption">
+              This is a cool feature about your product! It really separates you
+              from the crowd.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="./assets/images/gig-it.png" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4"
-                    >Gig It<i class="material-icons right">more_vert</i></span
-                  >
-                  <p class="project-link">
-                    <a href="https://ptamayo97.github.io/Gig-It-project/"
-                      >View Project</a
-                    >
-                    <a href="https://github.com/ptamayo97/Gig-It-project"
-                      >GitHub</a
-                    >
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"
-                    >Gig It<i class="material-icons right">close</i></span
-                  >
-                  <p>
-                    An application that makes it easy for bands to show fans
-                    when and where their next show is.
-                  </p>
-                  <p>
-                    Technologies Used: HTML5, CSS3, Bootstrap4, Javascript,
-                    jQuery, AJAX, Firebase.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="./assets/images/memory-smash.png  "
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4"
-                    >Memory Smash<i class="material-icons right"
-                      >more_vert</i
-                    ></span
-                  >
-                  <div>
-                    <p class="project-link">
-                      <a href="https://ptamayo97.github.io/Clicky-Game/"
-                        >View Project</a
-                      >
-                      <a href="https://github.com/ptamayo97/Clicky-Game"
-                        >GitHub</a
-                      >
-                    </p>
+    <!-- Projects -->
+    <div id="projects"></div>
+    <div class="section light valign-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h1>Projects</h1>
+            <div class="row masonry-grid">
+              <div class="col s12 m6 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <a href="blog.html"
+                      ><img src="images/schedulizepic.png"
+                    /></a>
+                    <span class="card-title">Schedulize</span>
                   </div>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"
-                    >Memory Smash<i class="material-icons right">close</i></span
-                  >
-                  <p>A simple memory game.</p>
-                  <p>Technologies Used: HTML5, CSS3, Materialize.CSS, React.</p>
-                </div>
               </div>
-            </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="./assets/images/crystal-collector.png"
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4"
-                    >Crystal Collector<i class="material-icons right"
-                      >more_vert</i
-                    ></span
-                  >
-                  <p class="project-link">
-                    <a href="https://ptamayo97.github.io/unit-4-game/"
-                      >View Project</a
-                    >
-                    <a href="https://github.com/ptamayo97/unit-4-game"
-                      >GitHub</a
-                    >
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"
-                    >Crystal Collector<i class="material-icons right"
-                      >close</i
-                    ></span
-                  >
-                  <p>A basic number guessing game.</p>
-                  <p>Technologies Used: HTML5, CSS3, Javascript, jQuery.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col m6">
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img
-                    class="activator"
-                    src="./assets/images/space-quiz.png  "
-                  />
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4"
-                    >Space Quiz<i class="material-icons right"
-                      >more_vert</i
-                    ></span
-                  >
-                  <div>
-                    <p class="project-link">
-                      <a href="https://ptamayo97.github.io/TriviaGame/"
-                        >View Project</a
-                      >
-                      <a href="https://github.com/ptamayo97/TriviaGame"
-                        >GitHub</a
-                      >
-                    </p>
+              <div class="col s12 m6 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <a href="blog.html"><img src="images/gigitpic.png"/></a>
+                    <span class="card-title">Gig It</span>
                   </div>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"
-                    >Space Quiz<i class="material-icons right">close</i></span
-                  >
-                  <p>A simple timed quiz application.</p>
-                  <p>
-                    Technologies Used: HTML5, CSS3, Bootstrap4, Javascript,
-                    jQuery.
-                  </p>
+              </div>
+              <div class="col s12 m6 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <a href="blog.html"
+                      ><img src="images/foodycornerpic.png"
+                    /></a>
+                    <span class="card-title">Foody Corner</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -315,27 +175,88 @@
       </div>
     </div>
 
-    <footer class="red darken-4">
-      <div class="footer-section">
-        <div class="footer-links">
-          <a name="contact"></a>
-          <a href="https://github.com/ptamayo97" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/paul-tamayo-317926168/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
+    <!-- Contact Me -->
+    <div id="contact"></div>
+    <div class="section black shuffle-under-transition valign-wrapper">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col s12"><h2 class="section-title">Contact Me</h2></div>
+            <div class="input-field col s6">
+              <input id="first_name" type="text" />
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" />
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Message</label>
+              <a class="waves-effect waves-light btn-large">Send</a>
+            </div>
+          </div>
+        </form>
       </div>
+    </div>
 
-      <div id="email" class="white-text darken-4">
-        <i class="fas fa-envelope"></i> ptamayo97@yahoo.com
+    <!-- Footer -->
+    <footer class="page-footer shuffle-under-transition">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 m3">
+            <img
+              class="materialize-logo"
+              src="images/materialize-teal.png"
+              alt=""
+            />
+            <p>Made with love by Materialize.</p>
+          </div>
+          <div class="col s6 m3">
+            <h5>About</h5>
+            <ul>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Docs</a></li>
+            </ul>
+          </div>
+          <div class="col s6 m3">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#!">Community</a></li>
+              <li><a href="#!">Subscribe</a></li>
+              <li><a href="#!">Email</a></li>
+            </ul>
+          </div>
+          <div class="col s6 m3">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="#!">Twitter</a></li>
+              <li><a href="#!">Facebook</a></li>
+              <li><a href="#!">Github</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!-- JavaScript at end of body for optimized loading -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- External libraries -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+
+    <!-- Initialization script -->
+    <script src="js/startup.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>
