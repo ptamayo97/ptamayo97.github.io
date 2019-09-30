@@ -1,23 +1,11 @@
 {
-  "name": "startup",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Startup Materialize Theme",
-  "main": "Gruntfile.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "my portfolio",
   "dependencies": {
-    "hammerjs": "^2.0.4",
-    "jquery": "^2.1.4",
-    "node-archiver": "^0.2.0",
     "smooth-scroll": "^16.1.0"
-  },
-  "devDependencies": {
-    "jquery": "^2.1.4",
-    "node-sass": "^3.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Alan Chang"
+  }
 }
