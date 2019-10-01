@@ -17,9 +17,6 @@
     />
   </head>
   <body>
-    <!-- <script src="/__/firebase/7.0.0/firebase-app.js"></script>
-    <script src="/__/firebase/7.0.0/firebase-analytics.js"></script> -->
-
     <!-- Navbar -->
     <nav class="navbar sticky navbar-solid-transition">
       <div class="nav-wrapper container ">
@@ -172,29 +169,37 @@
     <div id="contact"></div>
     <div class="section light shuffle-under-transition valign-wrapper">
       <div class="container">
-        <form onsubmit="">
+        <form name="contactForm">
           <div class="row">
             <div class="col s12">
               <h2 class="section-title">Let's work together!</h2>
             </div>
             <div class="input-field col s12 m4">
-              <input id="firstName" type="text" />
+              <input id="firstName" type="text" class="validate" />
               <label for="firstName">First Name</label>
             </div>
             <div class="input-field col s12 m4">
-              <input id="lastName" type="text" />
+              <input id="lastName" type="text" class="validate" />
               <label for="lastName">Last Name</label>
             </div>
             <div class="input-field col s12 m4">
-              <input id="email" type="email" required />
+              <input id="email" type="email" class="validate" />
               <label for="email">Email</label>
             </div>
             <div class="input-field col s12">
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Message</label>
-              <a id="contactSubmit" class="waves-effect waves-light btn-large"
-                >Send</a
+              <textarea
+                id="message"
+                class="materialize-textarea validate"
+              ></textarea>
+              <label for="message">Message</label
+              ><button
+                id="contactSubmit"
+                type="submit"
+                class="waves-effect waves-light btn-large"
               >
+                Send
+              </button>
+              <!-- <label for="contactSubmit" class="white-text">Send</label> -->
             </div>
           </div>
         </form>
@@ -245,9 +250,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <!-- <script src="/__/firebase/7.0.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.0.0/firebase-firestore.js"></script>
-    <script src="/__/firebase/init.js"></script> -->
 
     <!-- External libraries -->
     <script src="js/imagesloaded.pkgd.min.js"></script>
@@ -257,6 +259,7 @@
     <script src="js/animation.gsap.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
     <!-- Initialization script -->
     <script src="js/startup.js"></script>
@@ -264,64 +267,6 @@
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-    <script>
-      firebase.initializeApp({
-        apiKey: "AIzaSyBZyQwVp6AvKXIs3gmFqjsImUVqGiFTYok",
-        authDomain: "portfolio-e31a9.firebaseapp.com",
-        databaseURL: "https://portfolio-e31a9.firebaseio.com",
-        projectId: "portfolio-e31a9",
-        storageBucket: "portfolio-e31a9.appspot.com",
-        messagingSenderId: "872417866321",
-        appId: "1:872417866321:web:7f7f65a4370c72e1cf7e70"
-      });
-
-      var db = firebase.firestore();
-
-      $("#contactSubmit").click(event => {
-        event.preventDefault();
-        const firstName = $("#firstName")
-          .val()
-          .trim();
-        const lastName = $("#lastName")
-          .val()
-          .trim();
-        const email = $("#email")
-          .val()
-          .trim();
-        const message = $("#message")
-          .val()
-          .trim();
-
-        const data = {
-          name: {
-            firstName: firstName,
-            lastName: lastName
-          },
-          email: email,
-          message: message
-        };
-
-        db.collection("contacts")
-          .add({
-            name: {
-              firstName: data.name.firstName,
-              lastName: data.name.lastName
-            },
-            email: data.email,
-            message: data.message
-          })
-          .then(res => {
-            console.log("Success!");
-          })
-          .catch(error => {
-            console.error(`Error adding document: ${error}`);
-          });
-
-        $("#firstName").val("");
-        $("#lastName").val("");
-        $("#email").val("");
-        $("#message").val("");
-      });
-    </script>
+    <script src="js/firebase.js"></script>
   </body>
 </html>
